@@ -10,7 +10,8 @@ namespace CSharpCourse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Baslatmak istediginiz proqramin numarasini giriniz\n#1-SinavNotu #2-ATM #3-FOR" );
+            Console.WriteLine("Baslatmak istediginiz proqramin numarasini giriniz\n#1-SinavNotu\n#2-" +
+                "ATM\n#3-FOR\n#4-WHILE\n#5-VurmaCedveli\n#6-Login\n#7-Array\n#8-Metodlar" );
             string secim = Console.ReadLine();
             switch (secim)
             {
@@ -88,10 +89,85 @@ namespace CSharpCourse
                     }
                     break;
                 //case 3 end
+                //case 4 start
+                case "4":
+                    int a = 1;
+                    while (a <= 10)
+                    {
+                        Console.WriteLine(a);
+                        a++;
+                    }
+                    Console.ReadLine();
+                    break;
+                //case 4 end
+                //case 5 start
+                case "5":
+                    for (int i = 1; i <= 10; i++)
+                    {
+                        for (int j = 1; j <= 10; j++)
+                        {
+                            Console.WriteLine(i + "x" + j + "=" + (i * j));
+                        }
+                        
+                    }
+                        break;
+                //case 5 end
+                //case 6 start
+                case "6":
+                    int hak_sayisi = 3;
+                    while (true)
+                    {
+                        Console.WriteLine("Kullanıcı adınızı giriniz"); string kullaniciAdi = Console.ReadLine();
+                        Console.WriteLine("Şifrenizi giriniz"); string sifre = Console.ReadLine();
+                        if (kullaniciAdi == "enes" && sifre == "123")
+                        {
+                            Console.WriteLine("Tebrikler başarılı bir şekilde giriş yaptınız :)");
+                            break;
+                        }
+                        
+                        else
+                        {
+                            Console.WriteLine("Kullanıcı adınız veya şifreniz yanlış !");
+                            if (hak_sayisi > 0)
+                            {
+                                hak_sayisi -= 1;
+                            }
+                            
+                            if (hak_sayisi == 0)
+                            {
+                                Console.WriteLine("Hakkınız dolmuştur daha giriş yapamazsınız");
+                                break;
+                            }
+                        }
+                    }
+                                break;
+                //case 6 end
+                //case 7 start
+                case "7":
+                    int[] sayilar = new int[4];
+
+                    sayilar[0] = 10;
+                    sayilar[1] = 20;
+                    sayilar[2] = 30;
+                    sayilar[3] = 40;
+
+                    for(int i =0; i<sayilar.Length; i++)
+                    {
+                        Console.WriteLine(sayilar[i]);
+                    }
+                    break;
+                //case 7 end
+                //case 8 start
+                case "8":
+                    Salamver();
+                    break;
+                //case 8 end
                 default:
                     break;
 
             }
+
+
             Console.WriteLine("Proqramdan cixmaq ucun 'y' yazib 'ENTER' basin");
             Console.WriteLine("Davam etmek ucun sadece 'ENTER' basin");
             string s = Convert.ToString(Console.ReadLine());
@@ -103,6 +179,11 @@ namespace CSharpCourse
             {
                 Main(args);
             }
+        }
+
+        static void Salamver()
+        {
+            Console.WriteLine("Salamlar :)");
         }
     }
 }
