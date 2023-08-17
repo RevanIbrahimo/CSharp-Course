@@ -145,7 +145,6 @@ namespace CSharpCourse
                 //case 7 start
                 case "7":
                     int[] sayilar = new int[4];
-
                     sayilar[0] = 10;
                     sayilar[1] = 20;
                     sayilar[2] = 30;
@@ -159,7 +158,34 @@ namespace CSharpCourse
                 //case 7 end
                 //case 8 start
                 case "8":
-                    Salamver();
+                    Console.WriteLine("Metod nomresini secin:{1,2,3}");
+                   int metodnumber = int.Parse(Console.ReadLine());
+                    if(metodnumber == 1)
+                    {
+                        Salamver();
+                    } else if (metodnumber == 2)
+                    {
+                        Console.WriteLine("Sayi 1 yazin:");
+                        int t1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Sayi 2 yazin:");
+                        int t2 = Convert.ToInt32(Console.ReadLine());
+
+                        Toplama(t1,t2);
+                    } else if (metodnumber == 3)
+                    {
+                        int DonenDeger = toplamayap(6, 7);
+                        if (DonenDeger > 10)
+                        {
+                            Console.WriteLine("Değer 10 dan büyüktür");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Değer 10 dan küçüktür...");
+                            Console.ReadLine();
+                        }
+                    }
+                    
                     break;
                 //case 8 end
                 default:
@@ -180,10 +206,22 @@ namespace CSharpCourse
                 Main(args);
             }
         }
-
+        //Other Methods>>>>>>>>>>>>>>>>>
         static void Salamver()
         {
             Console.WriteLine("Salamlar :)");
+        }
+
+        static void Toplama(int sayi1, int sayi2)
+        {
+            Console.WriteLine("Toplami: " + (sayi1 + sayi2) + "\nHasili: " + (sayi1 * sayi2) + "\nFerqi: " + (sayi1 - sayi2) + "\nQismet: " + (sayi1 / sayi2));
+        }
+
+        static int toplamayap(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 + sayi2;
+            
+            return sonuc;
         }
     }
 }
