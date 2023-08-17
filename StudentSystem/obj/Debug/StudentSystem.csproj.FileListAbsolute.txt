@@ -1,0 +1,7 @@
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\bin\Debug\StudentSystem.exe.config
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\bin\Debug\StudentSystem.exe
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\bin\Debug\StudentSystem.pdb
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\obj\Debug\StudentSystem.csproj.AssemblyReference.cache
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\obj\Debug\StudentSystem.csproj.CoreCompileInputs.cache
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\obj\Debug\StudentSystem.exe
+C:\Users\ravan.ibrahimov\source\repos\CSharpCourse\StudentSystem\obj\Debug\StudentSystem.pdb
